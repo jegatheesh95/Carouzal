@@ -1,0 +1,113 @@
+.quick-access-learner-path {
+	background-image: linear-gradient(311deg, #4e3ad8, #1974da);
+	padding: 10px;
+	.tab-header {
+	  color: #ffffff;
+		font-size: 15px;
+		.tab-header-content {
+			text-align: center;
+			padding: .5rem 1rem;
+			display: inline-block;
+			padding: .5rem 1rem;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+		}
+	}
+	.tab-body {
+		position: relative;
+		.left-arrow-container {
+			position: absolute;
+			left: 0;
+			height: 100%;
+			top: 0;
+			display: flex;
+			width: 10%;
+			align-items: center;
+			justify-content: center;
+			.left-arrow {
+				color: #4c39d1;
+				padding: 10%;
+				background-color: #ffffff;
+				border-radius: 100px;
+				padding: 15% 20%;
+				z-index: 1;
+				text-align: center;
+				i {
+					margin: 0;
+				}
+			}
+		}
+		.right-arrow-container {
+			position: absolute;
+			right: 0;
+			height: 100%;
+			top: 0;
+			display: flex;
+			width: 10%;
+			align-items: center;
+			justify-content: center;
+			.right-arrow {
+				color: #4c39d1;
+				padding: 10%;
+				background-color: #ffffff;
+				border-radius: 100px;
+				padding: 15% 20%;
+				z-index: 1;
+				text-align: center;
+				i {
+					margin: 0;
+				}
+			}
+		}
+		.scroller {
+			overflow-x: scroll;
+			white-space: nowrap;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			.tab-body-content {
+				// opacity: 0.1;
+				white-space: pre-wrap;
+				display: inline-block;
+				margin: 20px;
+				width: 270px;
+				height: 290px;
+				border-radius: 4px;
+				background-color: #ffffff;
+				// box-shadow: 0 8px 20px 0 rgba(37, 56, 88, 0.8);
+				.card-thumbnail {
+					height: 50%;
+				}
+				.card-data {
+					position: relative;
+					height: 50%;;
+					padding: 10px 20px;
+					.path-name {
+						font-size: 16px;
+						margin-bottom: 5px;
+					}
+					.last-updated {
+						color: #5e6c84;
+						font-size: 14px;
+					}
+					.score {
+						font-size: 15px;
+						position: absolute;
+						bottom: 15px;
+						left: 0;
+						width: 100%;
+						padding: 0 20px;
+						display: flex;
+						justify-content: space-between;
+						color: #5e6c84;
+						.rating{
+						}
+						.learner-count {
+						}
+					}
+				}
+			}
+	  }
+	}
+}
